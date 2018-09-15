@@ -5,10 +5,10 @@ int main()
 {
   int Jan13, Feb13, Mar13, Apr13, May13, Jun13;
   int Jul13, Aug13, Sep13, Oct13, Nov13, Dec13;
-  int week[7];
+  int week[7] = {0};
 
   Dec13 = 0;
-  for (year = 1900; year < 2000; year++) {
+  for (int year = 1900; year < 2000; year++) {
     Jan13 = (Dec13 + 31) % 7;
     week[Jan13]++;
     Feb13 = (Jan13 + 30) % 7;
